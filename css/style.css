@@ -1,0 +1,78 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Bona Nova', serif;
+	overflow: hidden;
+	margin: 0;
+	background-image: url(../img/darkgrey-asphalt.jpg);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	padding: 0 20px;
+}
+
+.slide {
+	height: 80vh;
+	border-radius: 20px;
+	margin: 10px;
+	cursor: pointer;
+	color: rgb(59, 7, 245);
+	flex: 1;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	transition: all 500ms ease-in-out;
+}
+
+.slide h3 {
+	position: absolute;
+	font-size: 22px;
+	bottom: 20px;
+	text-align: center;
+	margin: 0;
+	opacity: 0;
+}
+
+.slide.active {
+	flex: 10;
+}
+
+.slide.active h3 {
+	opacity: 2;
+	transition: opacity 0.3s ease-in 0.5s;
+}
+
+h3 {
+	width: 100%;
+	word-wrap: break-word;
+}
+
+
+
+.bg1{
+	background-image: url(../img/GamingPC.jpg);
+}
+.bg2 {
+	background-image: url(../img/SonyPlaystation-5.jpg);
+}
+
+.bg3 {
+	background-image: url(../img/Xbox-One-xs_Large.jpg);
+}
+
+.bg4 {
+	background-image: url(../img/Xiaomi-Black-Shark-3-Pro-1.jpg);
+}
+
+.bg5 {
+	background-image: url(../img/Asus\ ROG\ Phone.jpg);
+}
